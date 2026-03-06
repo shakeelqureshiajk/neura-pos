@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="assets/images/favicon-32x32.ico" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="assets/css/app.css" rel="stylesheet">
+	<link href="assets/css/icons.css" rel="stylesheet">
+	<!-- Theme Style CSS -->
+	<link rel="stylesheet" href="assets/css/dark-theme.css" />
+	<link rel="stylesheet" href="assets/css/semi-dark.css" />
+	<link rel="stylesheet" href="assets/css/header-colors.css" />
+	<title>App Folder Structure</title>
+</head>
+
+<body>
+	<!--wrapper-->
+	<div class="wrapper">
+		<!--sidebar wrapper -->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<div>
+					<img src="assets/custom/image/logo.png" class="logo-icon" alt="logo icon">
+				</div>
+				<div>
+					<h4 class="logo-text"></h4>
+				</div>
+				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-back'></i>
+				</div>
+			 </div>
+			<!--navigation-->
+			<ul class="metismenu" id="menu">
+            </ul>
+			<!--end navigation-->
+		</div>
+		<!--end sidebar wrapper -->
+		<!--start header -->
+		<header>
+			<div class="topbar d-flex align-items-center">
+				<nav class="navbar navbar-expand gap-3">
+					<div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+					</div>
+
+					  <div class="header-item ms-2">
+                    	<span class="h5 mb-0">Documentation</span>
+                	  </div>
+
+					  <div class="top-menu ms-auto">
+						<ul class="navbar-nav align-items-center gap-1">
+							<li class="nav-item dark-mode d-none d-sm-flex">
+								<a class="nav-link dark-mode-icon" href="javascript:;"><i class='bx bx-moon'></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="user-box dropdown px-3">
+						<a href="javascript:void(0)" target="_blank" class="btn btn-primary"><i class="ri-shopping-basket-2-line me-1 align-middle"></i> Buy Now</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--end header -->
+		<!--start page wrapper -->
+		<div class="page-wrapper">
+			<div class="page-content">
+				<!--breadcrumb-->
+				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+
+					<label class="fs-5">Folder Structure</label>
+				
+				</div>
+				<!--end breadcrumb-->
+				<div class="card">
+					<div class="card-body">
+						
+                        <div class="alert alert-info d-flex align-items-center" role="alert">
+                            <i class="bx bx-check-double me-2 fs-4"></i>
+                            <span class="fs-5">This application is developed using the Laravel 10 Framework.</span>
+                        </div>
+
+						<h6 class="fw-semibold fs-16  mt-4 mb-3">Laravel Folder Structure:</h6>
+
+						<div class="table-responsive mb-4">
+                                    <table class="table table-bordered table-striped mb-0">
+                                        <thead class="table-primary">
+                                            <tr>
+                                                <th scope="col">Folder</th>
+                                                <th scope="col">Path</th>
+                                                <th scope="col">Uses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/folder-50x50.png" width="11%" alt="">Controller</p></td>
+                                                <td><code>app/Http/</code></td>
+                                                <td>All controller files are located here.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0"><img src="assets/images/folder-50x50.png" width="11%" alt="">Middleware</p></td>
+                                                <td><code>app/Http/</code></td>
+                                                <td>All Middlewares are located here ex: Authenticate.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0"><img src="assets/images/folder-50x50.png" width="11%" alt="">Enums</p></td>
+                                                <td><code>app/</code></td>
+                                                <td>Convenient way to manage and work with fixed sets of values within application </td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0"><img src="assets/images/folder-50x50.png" width="11%" alt="">Notifications</p></td>
+                                                <td><code>app/</code></td>
+                                                <td>You can define application Notification classes, basically  used to call SMS/Email.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0"><img src="assets/images/folder-50x50.png" width="11%" alt="">Models</p></td>
+                                                <td><code>app/</code></td>
+                                                <td>All applicaton Models are saved here, by using Models you can interact with database.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0"><img src="assets/images/folder-50x50.png" width="11%" alt="">Migration</p></td>
+                                                <td><code>database/</code></td>
+                                                <td>All Database related migrations.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0"><img src="assets/images/folder-50x50.png" width="11%" alt="">Seeders</p></td>
+                                                <td><code>database/</code></td>
+                                                <td>All Database related seeders, you can make dummy data from seeders.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0"><img src="assets/images/folder-50x50.png" width="11%" alt="">Routes</p></td>
+                                                <td><code>routes/</code></td>
+                                                <td>You can add new route in <code>routes/web.php</code> or create api in <code>routes/api.php</code>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0"><img src="assets/images/folder-50x50.png" width="11%" alt="">Resources</p></td>
+                                                <td><code>resources/</code></td>
+                                                <td>All assets or blade files here.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0"><img src="assets/images/folder-50x50.png" width="11%" alt="">composer.json</p></td>
+                                                <td><code>/</code></td>
+                                                <td>Composer is a dependency management tool for PHP.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <h6 class="fw-semibold fs-16  mt-4 mb-3">Application Layout Structure:</h6>
+
+								<div class="table-responsive mb-4">
+                                    <table class="table table-bordered table-striped mb-0">
+                                        <thead class="table-primary">
+                                            <tr>
+                                                <th scope="col">File(Custom Files)</th>
+                                                <th scope="col">Path</th>
+                                                <th scope="col">Uses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">app.blade.php</p></td>
+                                                <td><code>resources/views/layouts/</code></td>
+                                                <td>Main View file skeleton prepared.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">footer.blade.php</p></td>
+                                                <td><code>resources/views/layouts/</code></td>
+                                                <td>Footer text for application front end prepared.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">head.blade.php</p></td>
+                                                <td><code>resources/views/layouts/</code></td>
+                                                <td>Common css files placed here.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">header.blade.php</p></td>
+                                                <td><code>resources/views/layouts/</code></td>
+                                                <td>Code to handle front end header.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">navigation.blade.php</p></td>
+                                                <td><code>resources/views/layouts/</code></td>
+                                                <td>Code to handle sidebar navigation(links).</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">script.blade.php</p></td>
+                                                <td><code>resources/views/layouts/</code></td>
+                                                <td>Common JS files placed here.</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">session.blade.php</p></td>
+                                                <td><code>resources/views/layouts/</code></td>
+                                                <td>Code to show alerts on front end.</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <h6 class="fw-semibold fs-16  mt-4 mb-3">Application Components:</h6>
+
+								<div class="table-responsive mb-4">
+                                    <table class="table table-bordered table-striped mb-0">
+                                        <thead class="table-primary">
+                                            <tr>
+                                                <th scope="col">File(Custom Files)</th>
+                                                <th scope="col">Path</th>
+                                                <th scope="col">Uses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">achor-tag.blade.php</p></td>
+                                                <td><code>resources/views/components/</code></td>
+                                                <td>Used to manage links.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">browse-image.blade.php</p></td>
+                                                <td><code>resources/views/components/</code></td>
+                                                <td>Image browsing button with view image.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">button.blade.php</p></td>
+                                                <td><code>resources/views/components/</code></td>
+                                                <td>Code to handle buttion functionality.</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">input-labels.blade.php</p></td>
+                                                <td><code>resources/views/components/</code></td>
+                                                <td>Code to handle Labels.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">textarea.blade.php</p></td>
+                                                <td><code>resources/views/components/</code></td>
+                                                <td>Code to handle Text Box.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">input.blade.php</p></td>
+                                                <td><code>resources/views/components/</code></td>
+                                                <td>Code to handle Input Box.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">dropdown-*.blade.php</p></td>
+                                                <td><code>resources/views/components/</code></td>
+                                                <td>Code to handle Dropdowns.</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <h6 class="fw-semibold fs-16  mt-4 mb-3">Authentication Files:</h6>
+
+								<div class="table-responsive mb-4">
+                                    <table class="table table-bordered table-striped mb-0">
+                                        <thead class="table-primary">
+                                            <tr>
+                                                <th scope="col">File(Custom Files)</th>
+                                                <th scope="col">Path</th>
+                                                <th scope="col">Uses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">login.blade.php</p></td>
+                                                <td><code>resources/views/auth/</code></td>
+                                                <td>Login page code.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">forgot-password.blade.php</p></td>
+                                                <td><code>resources/views/auth/</code></td>
+                                                <td>Forgot Password page code.</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td><p class="mb-0">
+                                                	<img src="assets/images/file-50x50.png" width="11%" alt="">reset-password.blade.php</p></td>
+                                                <td><code>resources/views/auth/</code></td>
+                                                <td>Reset Password Page code.</td>
+                                            </tr>
+                                           
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end page wrapper -->
+		<!--start overlay-->
+		<div class="overlay toggle-icon"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<footer class="page-footer">
+			<p class="mb-0">Copyright © 2024. All right reserved.</p>
+		</footer>
+	</div>
+	<!--end wrapper-->
+
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<!--app JS-->
+	<script src="assets/js/app.js"></script>
+	<script src="assets/custom/js/navigation.js"></script>
+</body>
+
+</html>

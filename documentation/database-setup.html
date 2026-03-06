@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="assets/images/favicon-32x32.ico" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="assets/css/app.css" rel="stylesheet">
+	<link href="assets/css/icons.css" rel="stylesheet">
+	<!-- Theme Style CSS -->
+	<link rel="stylesheet" href="assets/css/dark-theme.css" />
+	<link rel="stylesheet" href="assets/css/semi-dark.css" />
+	<link rel="stylesheet" href="assets/css/header-colors.css" />
+	
+	<link rel="stylesheet" href="assets/plugins/lightbox2-dev/dist/css/lightbox.min.css" />
+	<title>Database Setup</title>
+</head>
+
+<body>
+	<!--wrapper-->
+	<div class="wrapper">
+		<!--sidebar wrapper -->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<div>
+					<img src="assets/custom/image/logo.png" class="logo-icon" alt="logo icon">
+				</div>
+				<div>
+					<h4 class="logo-text"></h4>
+				</div>
+				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-back'></i>
+				</div>
+			 </div>
+			<!--navigation-->
+			<ul class="metismenu" id="menu">
+			</ul>
+			<!--end navigation-->
+		</div>
+		<!--end sidebar wrapper -->
+		<!--start header -->
+		<header>
+			<div class="topbar d-flex align-items-center">
+				<nav class="navbar navbar-expand gap-3">
+					<div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+					</div>
+
+					  <div class="header-item ms-2">
+                    	<span class="h5 mb-0">Documentation</span>
+                	  </div>
+
+					  <div class="top-menu ms-auto">
+						<ul class="navbar-nav align-items-center gap-1">
+							<li class="nav-item dark-mode d-none d-sm-flex">
+								<a class="nav-link dark-mode-icon" href="javascript:;"><i class='bx bx-moon'></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="user-box dropdown px-3">
+						<a href="javascript:void(0)" target="_blank" class="btn btn-primary"><i class="ri-shopping-basket-2-line me-1 align-middle"></i> Buy Now</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--end header -->
+		<!--start page wrapper -->
+		<div class="page-wrapper">
+			<div class="page-content">
+				<!--breadcrumb-->
+				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+
+					<label class="fs-5">Installation</label>
+				
+				</div>
+				<!--end breadcrumb-->
+				<div class="card">
+					<div class="card-body">
+						
+						
+						<p>
+							Before moving to web application Installer create the database on your hosting server.
+
+						</p>
+
+						<h6 class="fw-semibold fs-16  mt-4 mb-3">Creating Database:</h6>
+
+						<p>
+							1. First you need to create database from your cPanel as shown in screenshot, Select MySQL-Database to redirect to database create page.
+						</p>
+						<p class="text-center">
+							<a href="assets/screenshots/installation/mysql-databases.png" data-lightbox="image-1" data-title="mysql-databases">
+								<img src="assets/screenshots/installation/mysql-databases.png" width="70%" data-lightbox="mysql-databases" data-title="mysql-databases">
+							</a>
+						</p>
+
+						<p>
+							2. After redirecting you will see the database create options.
+						</p>
+
+						<p class="text-center">
+							<a href="assets/screenshots/installation/create-database.png" data-lightbox="image-1" data-title="Create Database">
+								<img src="assets/screenshots/installation/create-database.png" width="70%" data-lightbox="Create-Database" data-title="Create Database">
+							</a>
+						</p>
+
+						<p>
+							3. After creating database, you need to create user for that database.
+						</p>
+
+						<p class="text-center">
+							<a href="assets/screenshots/installation/create-user.png" data-lightbox="image-1" data-title="Create User">
+								<img src="assets/screenshots/installation/create-user.png" width="70%" data-lightbox="Create-user" data-title="Create user">
+							</a>
+						</p>
+
+						<p>
+							4. After creating user, you need to provide privileges to user to handle the created database.
+						</p>
+
+						<p class="text-center">
+							<a href="assets/screenshots/installation/add-user-to-database.png" data-lightbox="image-1" data-title="add-user-to-database">
+								<img src="assets/screenshots/installation/add-user-to-database.png" width="70%" data-lightbox="add-user-to-database" data-title="add-user-to-database">
+							</a>
+						</p>
+
+						<p>
+							5. After selecting database & user, assign permission/privileges to that user.
+						</p>
+
+						<p class="text-center">
+							<a href="assets/screenshots/installation/assign-permissions.png" data-lightbox="image-1" data-title="assign-permissions">
+								<img src="assets/screenshots/installation/assign-permissions.png" width="70%" data-lightbox="assign-permissions" data-title="assign-permissions">
+							</a>
+						</p>
+						<p>
+							6. Your database created, now you can check your database by clicking on phpmyadmin, it will redirect to database page.
+						</p>
+
+						<p class="text-center">
+							<a href="assets/screenshots/installation/phpmyadmin.png" data-lightbox="image-1" data-title="phpmyadmin">
+								<img src="assets/screenshots/installation/phpmyadmin.png" width="70%" data-lightbox="phpmyadmin" data-title="phpmyadmin">
+							</a>
+						</p>
+
+						<h6 class="fw-semibold fs-16 mt-4 mb-3">Accessing phpMyAdmin on Local Development Environment:</h6>
+
+						<div class="mt-4">
+							<h6 class="fw-semibold">Using XAMPP:</h6>
+							<ol>
+								<li>Launch XAMPP Control Panel</li>
+								<li>Start both Apache and MySQL modules by clicking their respective "Start" buttons</li>
+								<li>Access phpMyAdmin through either:
+									<ul>
+										<li>Click the "Admin" button next to MySQL in XAMPP Control Panel</li>
+										<li>Open your browser and visit <code>http://localhost/phpmyadmin</code></li>
+									</ul>
+								</li>
+								<li>Default login credentials:
+									<ul>
+										<li>Username: <code>root</code></li>
+										<li>Password: <code>[leave blank]</code></li>
+									</ul>
+								</li>
+							</ol>
+						</div>
+
+						<div class="mt-4">
+							<h6 class="fw-semibold">Using Laragon:</h6>
+							<ol>
+								<li>Start Laragon (make sure the circle indicator is green)</li>
+								<li>Access phpMyAdmin through either:
+									<ul>
+										<li>Right-click Laragon tray icon → MySQL → phpMyAdmin</li>
+										<li>Open your browser and visit <code>http://localhost/phpmyadmin</code></li>
+									</ul>
+								</li>
+								<li>Default login credentials:
+									<ul>
+										<li>Username: <code>root</code></li>
+										<li>Password: <code>[leave blank]</code></li>
+									</ul>
+								</li>
+							</ol>
+						</div>
+
+						<div class="alert alert-info mt-4">
+							<strong>Tips:</strong>
+							<ul class="mb-0">
+								<li>Make sure both Apache and MySQL services are running before accessing phpMyAdmin</li>
+								<li>If you can't access phpMyAdmin, check if ports 80 (Apache) and 3306 (MySQL) are not being used by other applications</li>
+								<li>For security, consider setting a root password in development environment</li>
+							</ul>
+						</div>
+
+						
+
+						<div class="alert alert-info mt-4">
+							<strong>Important Notes:</strong>
+							<ul class="mb-0">
+								<li>Keep your database name, username, and password secure</li>
+								<li>Use strong passwords even in development environment</li>
+								<li>Database name should not contain spaces or special characters</li>
+								<li>Make note of these credentials as they'll be needed during application setup</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end page wrapper -->
+		<!--start overlay-->
+		<div class="overlay toggle-icon"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<footer class="page-footer">
+			<p class="mb-0">Copyright © 2024. All right reserved.</p>
+		</footer>
+	</div>
+	<!--end wrapper-->
+
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="assets/plugins/lightbox2-dev/dist/js/lightbox.min.js"></script>
+	<!--app JS-->
+	<script src="assets/js/app.js"></script>
+	<script src="assets/custom/js/navigation.js"></script>
+	<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
+</body>
+
+</html>

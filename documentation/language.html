@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="assets/images/favicon-32x32.ico" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="assets/css/app.css" rel="stylesheet">
+	<link href="assets/css/icons.css" rel="stylesheet">
+	<!-- Theme Style CSS -->
+	<link rel="stylesheet" href="assets/css/dark-theme.css" />
+	<link rel="stylesheet" href="assets/css/semi-dark.css" />
+	<link rel="stylesheet" href="assets/css/header-colors.css" />
+	
+	<link rel="stylesheet" href="assets/plugins/lightbox2-dev/dist/css/lightbox.min.css" />
+	<title>Dashboard</title>
+</head>
+
+<body>
+	<!--wrapper-->
+	<div class="wrapper">
+		<!--sidebar wrapper -->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<div>
+					<img src="assets/custom/image/logo.png" class="logo-icon" alt="logo icon">
+				</div>
+				<div>
+					<h4 class="logo-text"></h4>
+				</div>
+				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-back'></i>
+				</div>
+			 </div>
+			<!--navigation-->
+			<ul class="metismenu" id="menu">
+
+			</ul>
+			<!--end navigation-->
+		</div>
+		<!--end sidebar wrapper -->
+		<!--start header -->
+		<header>
+			<div class="topbar d-flex align-items-center">
+				<nav class="navbar navbar-expand gap-3">
+					<div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+					</div>
+
+					  <div class="header-item ms-2">
+                    	<span class="h5 mb-0">Documentation</span>
+                	  </div>
+
+					  <div class="top-menu ms-auto">
+						<ul class="navbar-nav align-items-center gap-1">
+							<li class="nav-item dark-mode d-none d-sm-flex">
+								<a class="nav-link dark-mode-icon" href="javascript:;"><i class='bx bx-moon'></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="user-box dropdown px-3">
+						<a href="javascript:void(0)" target="_blank" class="btn btn-primary"><i class="ri-shopping-basket-2-line me-1 align-middle"></i> Buy Now</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--end header -->
+		<!--start page wrapper -->
+		<div class="page-wrapper">
+			<div class="page-content">
+				<!--breadcrumb-->
+				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+
+					<label class="fs-5">Language</label>
+				
+				</div>
+				<!--end breadcrumb-->
+				<div class="card">
+					<div class="card-body">
+						<h6 class="fw-semibold fs-16  mt-4 mb-3">1. Add Language in Source Code</h6>
+						<p>
+							This master used to add new languages in the application.
+							If user wanted to add new language in the application, then user needs to convert language file directory from the laravel application source code.
+							<br>
+							<b>Steps to convert Language:</b>
+							Example if you wanted to add <b>Xyz</b> Language in the application.
+							<ul>
+								<li>
+									Copy source_code/lang/en/*, where <b>en</b> is the English language directory.
+								</li>
+								<li>
+									Create new directory <b>xy</b> in same directory, source_code/lang/xy/*.
+									<br>
+									Here, you need to copy <b>en</b> directory files in <b>xy</b> directory.
+								</li>
+								<li>
+									From the <b>xy</b> directory you need to open each file and need to convert English words in your Xyz language and save it.
+								</li>
+							</ul>
+						</p>
+						<b>English Language Source Code:</b>
+						<p class="text-center">
+							<a href="assets/screenshots/language/lang-en.png" data-lightbox="image-1" data-title="English Language">
+								<img src="assets/screenshots/language/lang-en.png" class="rounded border border-dark" width="70%" data-lightbox="English Language" data-title="English Language">
+							</a>
+						</p>
+						<b>Hindi Language Source Code:</b>
+						<p class="text-center">
+							<a href="assets/screenshots/language/lang-hi.png" data-lightbox="image-1" data-title="Hindi Language">
+								<img src="assets/screenshots/language/lang-hi.png" class="rounded border border-dark" width="70%" data-lightbox="Hindi Language" data-title="Hindi Language">
+							</a>
+						</p>
+
+						<h6 class="fw-semibold fs-16  mt-4 mb-3">1. Add Language in application database</h6>
+						<p>
+							<ul>
+								<li><b>Language Name: </b>Enter Language Name</li>
+								<li><b>Short Code: </b>Short code for language, which should be directory name created in source_code/lang/<b>hi</b>, where Hindi Language short code is <b>hi</b>. Where <b>hi</b> short code should be same as directory name in <b>lang</b> directory.</li>
+								<li><b>Country Flag: </b>Please cheeck marked search bar button, where you will see the Flags list select flag and add it.</li>
+								<li><b>Application Direction: </b>Each Language readed from one direction, where Arabic language readed from Right to Left(RTL)</li>
+							</ul>
+						</p>
+						<p class="text-center">
+							<a href="assets/screenshots/language/create.png" data-lightbox="image-1" data-title="Add Language">
+								<img src="assets/screenshots/language/create.png" class="rounded border border-dark" width="70%" data-lightbox="Add Language" data-title="Add Language">
+							</a>
+						</p>
+
+						<h6 class="fw-semibold fs-16  mt-4 mb-3">2. Language List</h6>
+						<p>
+							User can able to edit, delete Language from the list.
+						</p>
+						<p class="text-center">
+							<a href="assets/screenshots/language/list.png" data-lightbox="image-1" data-title="Language List">
+								<img src="assets/screenshots/language/list.png" class="rounded border border-dark" width="70%" data-lightbox="Language List" data-title="Language List">
+							</a>
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end page wrapper -->
+		<!--start overlay-->
+		<div class="overlay toggle-icon"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<footer class="page-footer">
+			<p class="mb-0">Copyright © 2024. All right reserved.</p>
+		</footer>
+	</div>
+	<!--end wrapper-->
+
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="assets/plugins/lightbox2-dev/dist/js/lightbox.min.js"></script>
+	<!--app JS-->
+	<script src="assets/js/app.js"></script>
+	<script src="assets/custom/js/navigation.js"></script>
+	<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
+</body>
+
+</html>

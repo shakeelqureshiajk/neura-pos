@@ -1,0 +1,65 @@
+🔄 Latest Updates:
+
+✨ Financial Management Improvements
+- Enhanced Cash Flow table functionality
+- Improved Cash Flow reporting system
+- Added customizable number precision (0 to 4 decimal places)
+
+💰 Pricing Features
+- Added Minimum Selling Price (MSP) field in Item Master
+- Implemented dynamic Sale Price updates during invoice creation
+- Added Purchase Price and Average Purchase Price update capabilities
+- New settings to restrict selling below MSP & MRP
+
+🛠️ Bug Fixes & Enhancements
+- Resolved Party Payment Date synchronization issue
+- Optimized pricing calculation system
+- Enhanced data validation for price restrictions
+
+These updates bring more flexibility and control to your business operations while maintaining data accuracy and compliance with pricing policies.
+
+# DeltaPOS v[NEW_VERSION_NUMBER] - [CURRENT_DATE]
+
+## 🚀 New Features
+NEW: Multi-currency transaction support added
+NEW: Advanced inventory tracking system implemented
+NEW: Enhanced reporting dashboard with new analytics features
+NEW: Mobile-responsive interface improvements
+
+## 🛠 Improvements
+IMPROVED: Database query optimization for faster performance
+UPDATED: Laravel framework upgraded to latest stable version
+ENHANCED: Overall UI/UX redesign for better user experience
+OPTIMIZED: System performance and response time
+
+## 🐛 Bug Fixes
+FIXED: Sales report calculation issues
+FIXED: Printer connectivity problems resolved
+FIXED: Product image upload functionality
+FIXED: Tax calculation errors in specific scenarios
+FIXED: Various minor UI glitches
+
+## 🔒 Security Updates
+SECURITY: Authentication system enhancement
+SECURITY: All dependencies updated to latest secure versions
+SECURITY: Additional XSS protection implemented
+SECURITY: API security measures strengthened
+
+## 📝 Documentation
+DOCS: Installation guide updated
+DOCS: New API documentation added
+DOCS: Troubleshooting guide for common issues included
+
+## ⚠️ Important Notes
+IMPORTANT: Backup your database before updating
+IMPORTANT: Clear application cache after update
+IMPORTANT: Review configuration files for new settings
+REQUIRED: Minimum PHP version 8.1
+REQUIRED: Minimum Laravel version 10.x
+
+## 💡 Additional Information
+For support and questions, please contact through:
+- Support email: [your-support-email]
+- Documentation: [documentation-link]
+
+Thank you for using NeuraPOS! 

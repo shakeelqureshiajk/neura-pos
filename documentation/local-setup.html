@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="assets/images/favicon-32x32.ico" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="assets/css/app.css" rel="stylesheet">
+	<link href="assets/css/icons.css" rel="stylesheet">
+	<!-- Theme Style CSS -->
+	<link rel="stylesheet" href="assets/css/dark-theme.css" />
+	<link rel="stylesheet" href="assets/css/semi-dark.css" />
+	<link rel="stylesheet" href="assets/css/header-colors.css" />
+	
+	<link rel="stylesheet" href="assets/plugins/lightbox2-dev/dist/css/lightbox.min.css" />
+	<title>Domain Setup</title>
+</head>
+
+<body>
+	<!--wrapper-->
+	<div class="wrapper">
+		<!--sidebar wrapper -->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<div>
+					<img src="assets/custom/image/logo.png" class="logo-icon" alt="logo icon">
+				</div>
+				<div>
+					<h4 class="logo-text"></h4>
+				</div>
+				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-back'></i>
+				</div>
+			 </div>
+			<!--navigation-->
+			<ul class="metismenu" id="menu">
+			</ul>
+			<!--end navigation-->
+		</div>
+		<!--end sidebar wrapper -->
+		<!--start header -->
+		<header>
+			<div class="topbar d-flex align-items-center">
+				<nav class="navbar navbar-expand gap-3">
+					<div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+					</div>
+
+					  <div class="header-item ms-2">
+                    	<span class="h5 mb-0">Documentation</span>
+                	  </div>
+
+					  <div class="top-menu ms-auto">
+						<ul class="navbar-nav align-items-center gap-1">
+							<li class="nav-item dark-mode d-none d-sm-flex">
+								<a class="nav-link dark-mode-icon" href="javascript:;"><i class='bx bx-moon'></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="user-box dropdown px-3">
+						<a href="javascript:void(0)" target="_blank" class="btn btn-primary"><i class="ri-shopping-basket-2-line me-1 align-middle"></i> Buy Now</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--end header -->
+		<!--start page wrapper -->
+		<div class="page-wrapper">
+			<div class="page-content">
+				<!--breadcrumb-->
+				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+					<label class="fs-5">Local Setup</label>
+				</div>
+				<!--end breadcrumb-->
+				<div class="card">
+					<div class="card-body">
+						<div class="alert alert-info border-0 bg-info bg-opacity-10 rounded-4">
+							<h5 class="text-primary mb-0">Setting Up DeltaPOS on Local Machine</h5>
+						</div>
+
+						<div class="mt-4">
+							<h6 class="fw-semibold fs-16 mb-3">1. System Requirements</h6>
+							<div class="table-responsive">
+								<table class="table table-bordered">
+									<tbody>
+										<tr>
+											<td>PHP Version</td>
+											<td>PHP 8.2 or higher</td>
+										</tr>
+										<tr>
+											<td>Required Extensions</td>
+											<td>BCMath, Ctype, JSON, Mbstring, OpenSSL, PDO, Tokenizer, XML, cURL, Fileinfo, GD</td>
+										</tr>
+										<tr>
+											<td>Database</td>
+											<td>MySQL 5.7+ or MariaDB 10.3+</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="mt-4">
+							<h6 class="fw-semibold fs-16 mb-3">2. Local Development Environment Setup</h6>
+							
+							<div class="row g-4">
+								<div class="col-md-12">
+									<div class="card border shadow-sm h-100">
+										<div class="card-header bg-light">
+											<h6 class="fw-semibold mb-0"><i class="bx bx-cube me-2"></i>Option 1: XAMPP Setup</h6>
+										</div>
+										<div class="card-body">
+											<ol>
+												<li>Download XAMPP with PHP 8.2 or higher from <a href="https://www.apachefriends.org/" target="_blank">apachefriends.org</a></li>
+												<li>Install XAMPP following the installation wizard</li>
+												<li>Start Apache and MySQL services from XAMPP Control Panel</li>
+												<li>Extract DeltaPOS files to <code>C:\xampp\htdocs\deltapos</code></li>
+												<li>Access your application at <code>http://localhost/deltapos/public</code></li>
+											</ol>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="card border shadow-sm h-100">
+										<div class="card-header bg-light">
+											<h6 class="fw-semibold mb-0"><i class="bx bx-star me-2"></i>Option 2: Laragon Setup <span class="badge bg-success ms-2">Recommended</span></h6>
+										</div>
+										<div class="card-body">
+											<ol>
+												<li>Download Laragon from <a href="https://laragon.org/download/" target="_blank">laragon.org</a></li>
+												<li>Install Laragon and select PHP 8.2 or higher during installation</li>
+												<li>Start Laragon and ensure all services are running</li>
+												<li>Extract DeltaPOS files to <code>C:\laragon\www\deltapos</code></li>
+												<li>Access your application at <code>http://localhost/deltapos/public</code></li>
+												<li>else Access your application at <code>http://deltapos.test</code> (Laragon creates virtual hosts automatically)</li>
+											</ol>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="mt-4">
+							<h6 class="fw-semibold fs-16 mb-3">3. Database Setup using phpMyAdmin</h6>
+							
+							<div class="accordion" id="phpMyAdminAccordion">
+								<!-- XAMPP phpMyAdmin -->
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#xamppPhpMyAdmin">
+											XAMPP phpMyAdmin Access
+										</button>
+									</h2>
+									<div id="xamppPhpMyAdmin" class="accordion-collapse collapse show" data-bs-parent="#phpMyAdminAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Start Apache and MySQL in XAMPP Control Panel</li>
+												<li>Access phpMyAdmin at <code>http://localhost/phpmyadmin</code></li>
+												<li>Default credentials:
+													<ul>
+														<li>Username: <code>root</code></li>
+														<li>Password: <code>(leave blank)</code></li>
+													</ul>
+												</li>
+											</ol>
+										</div>
+									</div>
+								</div>
+
+								<!-- Laragon phpMyAdmin -->
+								<div class="accordion-item">
+									<h2 class="accordion-header">
+										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#laragonPhpMyAdmin">
+											Laragon phpMyAdmin Access
+										</button>
+									</h2>
+									<div id="laragonPhpMyAdmin" class="accordion-collapse collapse" data-bs-parent="#phpMyAdminAccordion">
+										<div class="accordion-body">
+											<ol>
+												<li>Start Laragon</li>
+												<li>Click on "Database" button in Laragon or visit <code>http://localhost/phpmyadmin</code></li>
+												<li>Default credentials:
+													<ul>
+														<li>Username: <code>root</code></li>
+														<li>Password: <code>(leave blank)</code></li>
+													</ul>
+												</li>
+											</ol>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="alert alert-info border-0 bg-info bg-opacity-10 rounded-4 mt-3">
+								<h6 class="fw-semibold mb-2">Creating Database Steps:</h6>
+								<ol class="mb-0">
+									<li>Login to phpMyAdmin</li>
+									<li>Click "New" in the left sidebar</li>
+									<li>Enter database name (e.g., <code>deltapos</code>)</li>
+									<li>Select "Collation" as <code>utf8mb4_unicode_ci</code></li>
+									<li>Click "Create" button</li>
+								</ol>
+							</div>
+						</div>
+
+					
+
+						<div class="mt-4">
+							<h6 class="fw-semibold fs-16 mb-3">4. OPcache Configuration</h6>
+							<p>Enable OPcache to improve PHP performance by following these steps:</p>
+
+							<div class="alert alert-info border-0 bg-info bg-opacity-10 rounded-4 mt-3">
+								<h6 class="fw-semibold mb-2">1. Enable OPcache in php.ini</h6>
+								<p>Add or update these settings in your php.ini file:</p>
+								<pre class="bg-light p-3 rounded"><code>zend_extension=opcache.so
+opcache.enable=1
+opcache.memory_consumption=128
+opcache.max_accelerated_files=4000
+opcache.revalidate_freq=60</code></pre>
+							</div>
+
+							<div class="mt-3">
+								<h6 class="fw-semibold mb-2">2. Location of php.ini:</h6>
+								<ul>
+									<li>XAMPP: <code>C:\xampp\php\php.ini</code></li>
+									<li>Laragon: <code>C:\laragon\bin\php\php-8.x\php.ini</code></li>
+								</ul>
+							</div>
+
+							<div class="alert alert-warning border-0 bg-warning bg-opacity-10 rounded-4 mt-3">
+								<h6 class="fw-semibold mb-2">OPcache Settings Explained:</h6>
+								<ul class="mb-0">
+									<li><code>opcache.enable=1</code>: Enables OPcache</li>
+									<li><code>opcache.memory_consumption=128</code>: Memory allocation for OPcache in MB</li>
+									<li><code>opcache.max_accelerated_files=4000</code>: Maximum number of files that can be cached</li>
+									<li><code>opcache.revalidate_freq=60</code>: How often to check file timestamps for changes (in seconds)</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="mt-4">
+							<h6 class="fw-semibold fs-16 mb-3">5. Directory Permissions</h6>
+							<p>Set the following directory permissions:</p>
+							<pre class="bg-light p-3 rounded"><code>chmod -R 775 bootstrap/cache
+chmod -R 775 storage/framework
+chmod -R 775 storage/logs</code></pre>
+							<p class="mt-2">For Windows, ensure these directories are writable by your web server.</p>
+						</div>
+
+						<div class="mt-4">
+							<h6 class="fw-semibold fs-16 mb-3">6. Troubleshooting</h6>
+							<div class="table-responsive">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th>Issue</th>
+											<th>Solution</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>500 Server Error</td>
+											<td>Check storage directory permissions and .env file configuration</td>
+										</tr>
+										<tr>
+											<td>Composer Memory Limit</td>
+											<td>Run: <code>COMPOSER_MEMORY_LIMIT=-1 composer install</code></td>
+										</tr>
+										<tr>
+											<td>Database Connection Error</td>
+											<td>Verify database credentials in .env file and ensure MySQL service is running</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="mt-4">
+							<div class="alert alert-success border-0 bg-success bg-opacity-10 rounded-4">
+								<p class="mb-0"><strong>Development URL:</strong> After setup, your application will be available at:</p>
+								<ul class="mb-0 mt-2">
+									<li>XAMPP: <code>http://localhost/deltapos</code></li>
+									<li>Laragon: <code>http://deltapos.test</code></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end page wrapper -->
+		<!--start overlay-->
+		<div class="overlay toggle-icon"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<footer class="page-footer">
+			<p class="mb-0">Copyright © 2024. All right reserved.</p>
+		</footer>
+	</div>
+	<!--end wrapper-->
+
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="assets/plugins/lightbox2-dev/dist/js/lightbox.min.js"></script>
+	<!--app JS-->
+	<script src="assets/js/app.js"></script>
+	<script src="assets/custom/js/navigation.js"></script>
+	<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
+</body>
+
+</html>

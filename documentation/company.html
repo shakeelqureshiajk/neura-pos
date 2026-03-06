@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="assets/images/favicon-32x32.ico" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<script src="assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="assets/css/app.css" rel="stylesheet">
+	<link href="assets/css/icons.css" rel="stylesheet">
+	<!-- Theme Style CSS -->
+	<link rel="stylesheet" href="assets/css/dark-theme.css" />
+	<link rel="stylesheet" href="assets/css/semi-dark.css" />
+	<link rel="stylesheet" href="assets/css/header-colors.css" />
+	
+	<link rel="stylesheet" href="assets/plugins/lightbox2-dev/dist/css/lightbox.min.css" />
+	<title>Dashboard</title>
+</head>
+
+<body>
+	<!--wrapper-->
+	<div class="wrapper">
+		<!--sidebar wrapper -->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<div>
+					<img src="assets/custom/image/logo.png" class="logo-icon" alt="logo icon">
+				</div>
+				<div>
+					<h4 class="logo-text"></h4>
+				</div>
+				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-back'></i>
+				</div>
+			 </div>
+			<!--navigation-->
+			<ul class="metismenu" id="menu">
+			</ul>
+			<!--end navigation-->
+		</div>
+		<!--end sidebar wrapper -->
+		<!--start header -->
+		<header>
+			<div class="topbar d-flex align-items-center">
+				<nav class="navbar navbar-expand gap-3">
+					<div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+					</div>
+
+					  <div class="header-item ms-2">
+                    	<span class="h5 mb-0">Documentation</span>
+                	  </div>
+
+					  <div class="top-menu ms-auto">
+						<ul class="navbar-nav align-items-center gap-1">
+							<li class="nav-item dark-mode d-none d-sm-flex">
+								<a class="nav-link dark-mode-icon" href="javascript:;"><i class='bx bx-moon'></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="user-box dropdown px-3">
+						<a href="javascript:void(0)" target="_blank" class="btn btn-primary"><i class="ri-shopping-basket-2-line me-1 align-middle"></i> Buy Now</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--end header -->
+		<!--start page wrapper -->
+		<div class="page-wrapper">
+			<div class="page-content">
+				<!--breadcrumb-->
+				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+
+					<label class="fs-5">Company Settings</label>
+				
+				</div>
+				<!--end breadcrumb-->
+				<div class="card">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="settings-section mb-5">
+									<h5 class="text-primary"><i class="bx bx-building-house me-2"></i>Company Settings</h5>
+									<div class="card border shadow-none">
+										<div class="card-body">
+											<p class="text-muted">Configure your basic company information including:</p>
+											<ul class="list-unstyled ms-3">
+												<li><i class="bx bx-check text-success me-2"></i>Company Name</li>
+												<li><i class="bx bx-check text-success me-2"></i>Contact Details (Mobile, Email)</li>
+												<li><i class="bx bx-check text-success me-2"></i>Business Address</li>
+												<li><i class="bx bx-check text-success me-2"></i>Company Logo</li>
+											</ul>
+											<div class="text-center mt-3">
+												<a href="assets/screenshots/company/company.png" data-lightbox="image-1" data-title="Company Settings">
+													<img src="assets/screenshots/company/company.png" class="img-fluid rounded border" style="max-width: 800px" alt="Company Settings">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="settings-section mb-5">
+									<h5 class="text-primary"><i class="bx bx-code-alt me-2"></i>Prefix Codes</h5>
+									<div class="card border shadow-none">
+										<div class="card-body">
+											<p class="text-muted">Customize document numbering prefixes for various transactions:</p>
+											<div class="bg-light p-3 rounded">
+												<h6 class="mb-2">Example Formats:</h6>
+												<ul class="list-unstyled ms-3">
+													<li><i class="bx bx-right-arrow-alt me-2"></i>Sales Order: <code>SL/24/001</code></li>
+													<li><i class="bx bx-right-arrow-alt me-2"></i>Purchase Order: <code>PO/24/001</code></li>
+													<li><i class="bx bx-right-arrow-alt me-2"></i>Expense: <code>EXP/24/001</code></li>
+												</ul>
+											</div>
+											<div class="text-center mt-3">
+												<a href="assets/screenshots/company/prefix.png" data-lightbox="image-1" data-title="Prefix Codes">
+													<img src="assets/screenshots/company/prefix.png" class="img-fluid rounded border" style="max-width: 800px" alt="Prefix Settings">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="settings-section mb-5">
+									<h5 class="text-primary"><i class="bx bx-cog me-2"></i>General Settings</h5>
+									<div class="card border shadow-none">
+										<div class="card-body">
+											<div class="row">
+												<div class="col-md-6">
+													<h6>Number Precision</h6>
+													<p class="text-muted">Configure decimal places for monetary values</p>
+													<div class="bg-light p-2 rounded">
+														<small>Examples: 100,100.0, 100.00, 100.000, 100.0000</small>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<h6>Quantity Precision</h6>
+													<p class="text-muted">Set decimal places for item quantities</p>
+													<div class="bg-light p-2 rounded">
+														<small>Examples: 100,100.0, 100.00, 100.000, 100.0000</small>
+													</div>
+												</div>
+											</div>
+											<div class="text-center mt-3">
+												<a href="assets/screenshots/company/general.png" data-lightbox="image-1" data-title="General Settings">
+													<img src="assets/screenshots/company/general.png" class="img-fluid rounded border" style="max-width: 800px" alt="General Settings">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="settings-section mb-5">
+									<h5 class="text-primary"><i class="bx bx-package me-2"></i>Item Settings</h5>
+									<div class="card border shadow-none">
+										<div class="card-body">
+											<div class="row mb-4">
+												<div class="col-md-6">
+													<h6>Basic Settings</h6>
+													<ul class="list-unstyled">
+														<li><i class="bx bx-check-circle text-success me-2"></i>SKU Management</li>
+														<li><i class="bx bx-check-circle text-success me-2"></i>MRP Tracking</li>
+														<li><i class="bx bx-check-circle text-success me-2"></i>Item Name Uniqueness</li>
+													</ul>
+												</div>
+												<div class="col-md-6">
+													<h6>Advanced Tracking</h6>
+													<ul class="list-unstyled">
+														<li><i class="bx bx-check-circle text-success me-2"></i>Serial Number Tracking</li>
+														<li><i class="bx bx-check-circle text-success me-2"></i>Batch Tracking</li>
+													</ul>
+												</div>
+											</div>
+											<div class="bg-light p-3 rounded mb-3">
+												<h6>Price Control Features</h6>
+												<ul class="list-unstyled mb-0">
+													<li><i class="bx bx-shield me-2"></i>MRP Price Control - Prevent selling above MRP</li>
+													<li><i class="bx bx-shield me-2"></i>MSP Price Control - Prevent selling below minimum price</li>
+													<li><i class="bx bx-refresh me-2"></i>Automatic price updates for sales and purchases</li>
+												</ul>
+											</div>
+											<div class="text-center mt-3">
+												<a href="assets/screenshots/company/item.png" data-lightbox="image-1" data-title="Item Settings">
+													<img src="assets/screenshots/company/item.png" class="img-fluid rounded border" style="max-width: 800px" alt="Item Settings">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="settings-section">
+									<h5 class="text-primary"><i class="bx bx-printer me-2"></i>Print Settings</h5>
+									<div class="card border shadow-none">
+										<div class="card-body">
+											<p class="text-muted">Configure your document printing preferences</p>
+											<div class="text-center">
+												<a href="assets/screenshots/company/print.png" data-lightbox="image-1" data-title="Print Settings">
+													<img src="assets/screenshots/company/print.png" class="img-fluid rounded border" style="max-width: 800px" alt="Print Settings">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end page wrapper -->
+		<!--start overlay-->
+		<div class="overlay toggle-icon"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<footer class="page-footer">
+			<p class="mb-0">Copyright © 2024. All right reserved.</p>
+		</footer>
+	</div>
+	<!--end wrapper-->
+
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="assets/plugins/lightbox2-dev/dist/js/lightbox.min.js"></script>
+	<!--app JS-->
+	<script src="assets/js/app.js"></script>
+	<script src="assets/custom/js/navigation.js"></script>
+	<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
+</body>
+
+</html>

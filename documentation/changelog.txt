@@ -1,6 +1,6 @@
 🔄 Latest Updates:
 
-✨ Financial Management Improvements
+ Financial Management Improvements
 - Enhanced Cash Flow table functionality
 - Improved Cash Flow reporting system
 - Added customizable number precision (0 to 4 decimal places)
@@ -11,7 +11,7 @@
 - Added Purchase Price and Average Purchase Price update capabilities
 - New settings to restrict selling below MSP & MRP
 
-🛠️ Bug Fixes & Enhancements
+ Bug Fixes & Enhancements
 - Resolved Party Payment Date synchronization issue
 - Optimized pricing calculation system
 - Enhanced data validation for price restrictions
@@ -20,7 +20,7 @@ These updates bring more flexibility and control to your business operations whi
 
 # DeltaPOS v[NEW_VERSION_NUMBER] - [CURRENT_DATE]
 
-## 🚀 New Features
+##  New Features
 NEW: Multi-currency transaction support added
 NEW: Advanced inventory tracking system implemented
 NEW: Enhanced reporting dashboard with new analytics features
@@ -32,7 +32,7 @@ UPDATED: Laravel framework upgraded to latest stable version
 ENHANCED: Overall UI/UX redesign for better user experience
 OPTIMIZED: System performance and response time
 
-## 🐛 Bug Fixes
+##  Bug Fixes
 FIXED: Sales report calculation issues
 FIXED: Printer connectivity problems resolved
 FIXED: Product image upload functionality
@@ -45,7 +45,7 @@ SECURITY: All dependencies updated to latest secure versions
 SECURITY: Additional XSS protection implemented
 SECURITY: API security measures strengthened
 
-## 📝 Documentation
+##  Documentation
 DOCS: Installation guide updated
 DOCS: New API documentation added
 DOCS: Troubleshooting guide for common issues included

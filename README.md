@@ -1,24 +1,24 @@
-# Neura POS v2.5
+# Neura POS v1.2
 
 A powerful, multi-tenant Point of Sale (POS) system built with **Laravel 10** for retail stores, restaurants, pharmacies, supermarkets, and online commerce. Designed for businesses in Pakistan, US, Middle East, and Europe.
 
-## 🎯 Key Features
+##  Key Features
 
-- ✅ **Multi-Tenant Architecture** - Serve multiple businesses from one installation
-- ✅ **Multi-Language Support** - English, Urdu, Arabic, Hindi
-- ✅ **Multi-Currency** - 11+ currencies with dynamic exchange rates (PKR as default)
-- ✅ **Inventory Management** - Real-time stock tracking, low-stock alerts, batch/serial tracking
-- ✅ **Sales & Purchases** - Invoices, quotations, orders, returns, payments
-- ✅ **Vendor & Customer Management** - Contact info, payment history, credit limits
-- ✅ **Financial Reports** - Balance sheet, trial balance, expense reports, GST compliance
-- ✅ **Role-Based Access Control** - Admin, Manager, Cashier, Stock Manager, Accountant roles
-- ✅ **SMS & Email Notifications** - Twilio & Vonage SMS, email alerts
-- ✅ **Export/Print** - PDF generation, Excel export, thermal printing
-- ✅ **Mobile-Ready UI** - Responsive design for tablets and phones
+-  **Multi-Tenant Architecture** - Serve multiple businesses from one installation
+-  **Multi-Language Support** - English, Urdu, Arabic, Hindi
+-  **Multi-Currency** - 11+ currencies with dynamic exchange rates (PKR as default)
+-  **Inventory Management** - Real-time stock tracking, low-stock alerts, batch/serial tracking
+-  **Sales & Purchases** - Invoices, quotations, orders, returns, payments
+-  **Vendor & Customer Management** - Contact info, payment history, credit limits
+-  **Financial Reports** - Balance sheet, trial balance, expense reports, GST compliance
+-  **Role-Based Access Control** - Admin, Manager, Cashier, Stock Manager, Accountant roles
+-  **SMS & Email Notifications** - Twilio & Vonage SMS, email alerts
+-  **Export/Print** - PDF generation, Excel export, thermal printing
+-  **Mobile-Ready UI** - Responsive design for tablets and phones
 
 ---
 
-## 🏢 Use Cases
+##  Use Cases
 
 | Business Type | Key Features |
 |---|---|
@@ -30,7 +30,7 @@ A powerful, multi-tenant Point of Sale (POS) system built with **Laravel 10** fo
 
 ---
 
-## 💻 System Requirements
+##  System Requirements
 
 ### Software
 - **PHP**: 8.1 or higher
@@ -56,7 +56,7 @@ A powerful, multi-tenant Point of Sale (POS) system built with **Laravel 10** fo
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone Repository
 ```bash
@@ -102,7 +102,7 @@ php artisan serve
 
 ---
 
-## 📦 Project Structure
+##  Project Structure
 
 ```
 neura-pos/
@@ -128,7 +128,7 @@ neura-pos/
 
 ---
 
-## 🌐 Language & Currency Configuration
+##  Language & Currency Configuration
 
 ### Languages
 Manage in **Settings → General → Language**:
@@ -149,7 +149,7 @@ Exchange rates auto-update; edit in currency admin panel.
 
 ---
 
-## 📊 Core Modules
+##  Core Modules
 
 ### Sales Module
 - Create invoices, quotations, orders
@@ -193,7 +193,7 @@ Exchange rates auto-update; edit in currency admin panel.
 
 ---
 
-## 🔐 Security & Access Control
+##  Security & Access Control
 
 **Roles**:
 - **Admin** - Full system access
@@ -206,7 +206,7 @@ Exchange rates auto-update; edit in currency admin panel.
 
 ---
 
-## 🛠️ Key Dependencies
+##  Key Dependencies
 
 | Package | Purpose |
 |---|---|
@@ -223,7 +223,7 @@ Exchange rates auto-update; edit in currency admin panel.
 
 ---
 
-## 📚 Documentation
+##  Documentation
 
 - **[SETUP_GUIDE.md](SETUP_GUIDE.md)** - Complete installation & configuration
 - **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** - Common commands & troubleshooting
@@ -257,7 +257,7 @@ npm run watch                              # Watch for changes
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Database Connection Error
 ```bash
@@ -283,13 +283,13 @@ npm run build
 
 ---
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-## 👋 Support & Contribution
+##  Support & Contribution
 
 - **Report Issues**: [GitHub Issues](https://github.com/shakeelqureshiajk/neura-pos/issues)
 - **Feature Requests**: Welcome! Open an issue with `[FEATURE]` prefix
@@ -297,17 +297,17 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) for deta
 
 ---
 
-## 🌟 Recent Updates (v2.5)
+##  Recent Updates (v2.5)
 
-✨ **Multi-Language & Multi-Currency Enhancements**:
-- ✅ Added Urdu language (RTL) support
-- ✅ Kept Arabic, Hindi, and English
-- ✅ Added 11+ currencies with dynamic exchange rates
-- ✅ PKR set as primary/base currency
-- ✅ Selectable primary currency in settings (no code changes needed)
-- ✅ All historical exchange rates update relative to selected base currency
+ **Multi-Language & Multi-Currency Enhancements**:
+-  Added Urdu language (RTL) support
+-  Kept Arabic, Hindi, and English
+-  Added 11+ currencies with dynamic exchange rates
+-  PKR set as primary/base currency
+-  Selectable primary currency in settings (no code changes needed)
+-  All historical exchange rates update relative to selected base currency
 
 ---
 
-**Made with ❤️ for businesses worldwide**
+**Made with  for businesses worldwide**
 

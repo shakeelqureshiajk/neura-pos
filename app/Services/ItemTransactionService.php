@@ -945,7 +945,7 @@ class ItemTransactionService{
 
         $items = Item::whereIn('id', $itemIds)->get()->keyBy('id');
 
-        // ✅ Purchase Transactions
+        //  Purchase Transactions
         $purchaseTransactions = ItemTransaction::whereIn('item_id', $itemIds)
             ->whereIn('unique_code', [
                 ItemTransactionUniqueCode::PURCHASE->value,
@@ -958,7 +958,7 @@ class ItemTransactionService{
             ->get()
             ->groupBy('item_id');
 
-        // ✅ Sale Transactions
+        //  Sale Transactions
         $saleTransactions = ItemTransaction::whereIn('item_id', $itemIds)
             ->where('unique_code', ItemTransactionUniqueCode::SALE->value)
             ->when($saleWarehouseIds, function ($query) use ($saleWarehouseIds) {

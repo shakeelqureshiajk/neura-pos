@@ -1,4 +1,4 @@
-🐛 **Github issues is for bugs only.** No feature requests or support tickets please.
+ **Github issues is for bugs only.** No feature requests or support tickets please.
 
 ## Trouble using Lightbox?
 
